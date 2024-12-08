@@ -1,26 +1,39 @@
-# Tic-Tac-Toe Game
+<div align="center">
 
-A simple, interactive Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
+# 🎮 Tic-Tac-Toe Game
 
-## Description
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-This is a classic implementation of the Tic-Tac-Toe game where two players can play against each other. The game features a clean, modern interface with a responsive design.
+A modern, responsive implementation of the classic Tic-Tac-Toe game with a beautiful UI.
 
-## Features
+[🎮 Play Now](#installation) | [📝 Report Bug](../../issues) | [🌟 Star this repo](../../stargazers)
 
-- Interactive 3x3 game board
-- New Game button to start fresh games
-- Reset button to clear the current game
-- Winner announcement display
-- Responsive design for various screen sizes
+![Game Preview](preview.gif)
 
-## How to Play
+</div>
 
-1. Open `index.html` in your web browser
-2. Players take turns clicking on empty squares to place their mark (X or O)
-3. The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins
-4. If no player achieves three in a row and all squares are filled, the game is a draw
-5. Click "NEW GAME" to start a fresh game at any time
-6. Use "Reset Button" to clear the current game board
+## ✨ Features
 
-## File Structure 
+- 🎯 Interactive 3x3 game board
+- 🔄 New Game & Reset functionality
+- 🏆 Winner announcement display
+- 📱 Responsive design for all devices
+- 🎨 Modern UI with smooth animations
+- 🌈 Clean and minimal interface
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- A modern web browser
+- Basic understanding of web development
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://
