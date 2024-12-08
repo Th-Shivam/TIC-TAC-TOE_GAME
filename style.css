@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,66 +14,138 @@
 }
 
 body {
+    background: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
     text-align: center;
-    background-color: #FFF5F7;
+    max-width: 500px;
+    width: 90%;
 }
 
-.container {
-    height: 70vmin;
-    display: flex;
-    justify-content:center ;
-    align-items: center;
+#gname {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-.game {
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center ;
-    align-items: center;
-    gap: 1.5vmin;
-    
+#winmsg {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
 }
 
-.box {
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0 1rem rgba(0,0,0,1.5);
-    font-size: 8vmin;
-    color: #FF6B6B;
-    
-}
-
-#rst-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #C7F464;
-    border-radius: 1rem;
-}
-#ngame{
-    padding: 1rem;
-    font-size: 1rem;
-    background-color: #06D6A0;
-    border-radius: 1rem;
-    margin-top:10px ;
-}
-#winmsg{
-    margin-top:60px
-}
-#gname{
-    margin-top: 10px;
-}
-
-.hide{
-
+.hide {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
-    #gname {
-    margin-top: 145px;
+.container {
+    margin: 2rem 0;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.box {
+    aspect-ratio: 1;
+    font-size: 2rem;
+    border: none;
+    background: var(--background-color);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.box:hover {
+    background: #d5dbdb;
+    transform: translateY(-2px);
+    box-shadow: var(--hover-shadow);
+}
+
+#ngame, #rst-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin: 0.5rem;
+}
+
+#ngame {
+    background: var(--secondary-color);
+    color: white;
+}
+
+#rst-btn {
+    background: var(--accent-color);
+    color: white;
+}
+
+#ngame:hover, #rst-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--hover-shadow);
+}
+
+footer {
+    margin-top: 2rem;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#heart {
+    color: var(--accent-color);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
     }
-  }
+    
+    #gname {
+        font-size: 2rem;
+    }
+    
+    .game {
+        max-width: 250px;
+    }
+    
+    .box {
+        font-size: 1.5rem;
+    }
+}
