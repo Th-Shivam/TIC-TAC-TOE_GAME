@@ -36,4 +36,4 @@ A modern, responsive implementation of the classic Tic-Tac-Toe game with a beaut
 1. Clone the repository
 
 ```bash
-git clone https://
+git clone https://github.com/Th-Shivam/TIC-TAC-TOE_GAME
